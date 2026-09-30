@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cirkity — STEM Kits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="c"></canvas>
+
+  <header class="top">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" width="24" height="24"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="3.14 3.14"/><circle cx="16" cy="16" r="10" fill="currentColor"/><circle cx="16" cy="16" r="4" fill="#0b0b0d"/></svg>
+      <span>cirkity<b>.</b></span>
+    </div>
+  </header>
+
+  <div class="hint" id="hint">Click the box to open</div>
+
+  <footer class="bar" id="info">
+    <div class="dots" id="dots"></div>
+    <div class="idx"><b id="cur">01</b><span>/ <i id="tot">08</i></span></div>
+    <div class="main">
+      <h1 id="title">Ramp &amp; Roll</h1>
+      <div class="edition" id="edition"></div>
+    </div>
+    <dl class="meta">
+      <div><dt>Grades</dt><dd id="band"></dd></div>
+      <div><dt>Cost / kit</dt><dd id="cost"></dd></div>
+      <div class="wide"><dt>Concepts</dt><dd id="concept"></dd></div>
+    </dl>
+    <div class="nav">
+      <button id="prev" aria-label="Previous kit"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      <button id="next" aria-label="Next kit"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </footer>
+
+  <button class="close" id="close">← Close box</button>
+  <aside class="panel" id="panel">
+    <div class="ptitle"><span id="ptitle"></span><em id="pedition"></em></div>
+    <div class="plabel">In the box · <span id="pcount"></span> items</div>
+    <ul id="parts"></ul>
+    <div class="phint">Hover a part to identify it. Drag to rotate.</div>
+  </aside>
+
+  <div class="tip" id="tip"></div>
+  <div class="loader" id="loader"><span>cirkity<b>.</b></span></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
